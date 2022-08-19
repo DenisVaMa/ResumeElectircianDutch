@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f7fa;
+        }
+
+
+        /* main styles */
+
+        .main {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: #f5f7fa;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        /* main-content styles */
+
+        .main-content {
+            background-color: #fff;
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 105px 90px;
+        }
+
+
+        /* about styles */
+
+        .about {
+            margin-bottom: 40px;
+        }
+
+        .about-position {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .about-name {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 55px;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+
+        .about-description {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+            width: 400px;
+        }
+
+
+        /* project styles */
+
+        .projects {
+            margin-bottom: 50px;
+        }
+
+        .projects-list {
+            padding: 0;
+            margin-left: 15px;
+        }
+
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .projects-item {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+        .project,
+        .project-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+            text-decoration: none;
+        }
+
+        .project-link {
+            margin-left: 10px;
+        }
+
+        .project-bracket {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #000000;
+        }
+
+
+        /* work styles */
+
+        .work {
+            margin-bottom: 45px;
+        }
+
+
+        /* education styles */
+
+        .work-position {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .organization {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FB6D3A;
+        }
+
+        .period {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #A8A8A8;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+        }
+
+        .work-list {
+            padding: 0;
+            margin-left: 15px;
+        }
+
+        .work-list-item {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+        }
+
+        .education {}
+
+        .university {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FB6D3A;
+            margin-bottom: 10px;
+        }
+
+        .department {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+
+        /* sidebar styles */
+
+        .sidebar {
+            background-color: #1E2939;
+            padding-top: 40px;
+            width: 370px;
+        }
+
+        .photo {
+            width: 370px;
+            margin-bottom: 50px;
+        }
+
+        .contacts {
+            margin-bottom: 47px;
+        }
+
+        .tech-skills {
+            margin-bottom: 45px;
+        }
+
+        .sidebar-title {
+            color: #ffffff;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 10px;
+        }
+
+        .contact-type {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+
+        .contact-link {
+            opacity: 0.5;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+
+        .contacts,
+        .tech-skills,
+        .soft-skills {
+            margin-left: 40px;
+        }
+
+
+        /* .soft-skills {
+    margin-bottom: 366px;
+} */
+
+        .tech-skills-list,
+        .soft-skills-list {
+            color: #fff;
+            padding: 0px;
+            margin-left: 17px;
+        }
+
+        .tech-skills-item,
+        .soft-skills-item {
+            color: #fb6d3a;
+        }
+
+        .tech-skills-text,
+        .soft-skills-text {
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    </style>
+    <title>My resume</title>
+</head>
+
+<body>
+
+    <!-- Main -->
+    <div class="main">
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- about user -->
+            <div class="about">
+                <h1 class="about-position">Еlektricien</h1>
+                <h2 class="about-name">Denys Maiorov</h2>
+                <p class="about-description">В данный момент я безработный). Предыдущая работа, с которую я был вынужден
+                    покинуть, никак не была связана с IT. Но я не отчаиваюсь. IT - это мечта всей моей жизни. На
+                    протяжении 8 лет, я постоянно пытался для себя, что-то изучать HTML, CSS, JS, PHP, различные
+                    фреймворики, СУБД. Но так как для меня не было осбой мотивации изучать, что-то конкретное, как
+                    такового портфолио у меня нет. Уверен, что если передо мной поставят любую задачу - я в состоянии ее
+                    выполнить. Вопрос не стоит в денежном вознаграждении, я хотел бы приобрести опыт работы.</p>
+            </div>
+
+            <!-- Work -->
+            <div class="work">
+                <h3 class="title">Werkervaring</h3>
+                <!-- Company 1 -->
+                <!-- <div>
+                    <h4 class="work-position">Front-End Developer <span class="organization">Freelance</span> </h4>
+                    <p class="period">June 2022 - up to now <span class="line">|</span> Ukraine</p>
+                    <ul class="work-list">
+                        <li class="work-list-item"> Consistently delivered up to 10 writing projects per week, including online ad copy, website blog content, and email newsletters. With regularly published blog content and weekly email newsletters, the website saw an increase of
+                            10,000 visitors/month and an increase of 20+ qualified leads each month.</li>
+                        <li class="work-list-item">Developed 50 graphic design pieces per month for the client’s website and social media pages, which received a total of 12 000 impressions during the 3-month campaign. The client was extremely pleased with the graphic design quality
+                            and the record-breaking campaign results. </li>
+                    </ul>
+                </div>
+                Company 2 -->
+                <div>
+                    <h4 class="work-position">Elektricien <span class="organization">Zaporozhogneupor (Mariupol-site)
+                            Metinvest holding</span></h4>
+                    <p class="period">Augustus 2004 - Juni 2022 <span class="line">|</span> Oekraïne</p>
+                    <ul class="work-list">
+                        <li class="work-list-item">Gewetensvol gewerkt zonder onderbreking in de ervaring van 18 jaar.
+                        </li>
+                        <li class="work-list-item">In de hoofdspecialiteit bereikte hij de 6e categorie en 4e groep in
+                            elektrische veiligheid.</li>
+                        <li class="work-list-item">Hij studeerde veel verwante beroepen, zoals: een elektricien voor het
+                            onderhoud van hefmechanismen, een bestuurder van hefmechanismen die vanaf de vloer worden
+                            bediend, een slingeraar, een bestuurder van een elektrische auto.</li>
+                        <li class="work-list-item">Opleiding gevolgd en vervanging van de direct leidinggevende
+                            uitgevoerd.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Education -->
+            <div class="education">
+                <h3 class="title">Opleiding</h3>
+                <!-- University -->
+                <h4 class="university">Technische Staatsuniversiteit Priazovski</h4>
+                <h5 class="department">Energie/Еlektrotechnische stroomverbruiksystemen</h5>
+                <p class="period">September 1999 - Juni 2004<span class="line"> |</span> Oekraïne</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects">
+                <h3 class="title">Extra informatie</h3>
+                <ol class="projects-list">
+                    <li class="projects-item">
+                        <span class="project">Burgerlijke staat: gehuwd.</span>
+                    </li>
+                    <li class="projects-item">
+                        <span class="project">Kinderen: 1 kind 5 jaar oud</span>
+                    </li>
+                    <li class="projects-item">
+                        <span class="project">Mogelijkheid tot zakenreizen: ja.</span>
+                    </li>
+                    <li class="projects-item">
+                        <span class="project">Bereidheid om onregelmatig te werken: ja..</span>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="img/photo.jpg" alt="user photo" class="photo">
+            <!-- Contacts -->
+            <div class="contacts">
+                <h3 class="sidebar-title">Contacts</h3>
+                <div>
+                    <p><span class="contact-type">C:</span><a class="contact-link" href="tel:+32479280165">+32 479 28 01
+                            65</a></p>
+                    <p><span class="contact-type">E:</span><a class="contact-link"
+                            href="mailto:denisvalerievichmayorov1@gmail.com">denisvalerievich\mayorov1@gmail.com</a></p>
+                    <p><span class="contact-type">M:</span><a class="contact-link"
+                            href="https://goo.gl/maps/Dr3fML5wd4D9BS376">Antwerpen, Willem Gijsselsstraat 16, 2050</a></p>
+                </div>
+            </div>
+            <!-- Tech skills -->
+            <div class="tech-skills">
+                <h3 class="sidebar-title">Tech Skills</h3>
+                <ul class="tech-skills-list">
+                    <li class="tech-skills-item"><span class="tech-skills-text">Ervaring in het repareren en onderhouden
+                            van elektrische systemen</span></li>
+                    <li class="tech-skills-item"><span class="tech-skills-text">Ervaring in reparatie en onderhoud van
+                            elektrische apparatuur</span></li>
+                    <li class="tech-skills-item"><span class="tech-skills-text">Kennis van veiligheid</span></li>
+                    <li class="tech-skills-item"><span class="tech-skills-text">Ervaring met het bewaken van de werking
+                            van elektrische apparatuur</span></li>
+                    <li class="tech-skills-item"><span class="tech-skills-text">Mogelijkheid om de goede werking van
+                            productiemachines te garanderen</span></li>
+                    <li class="tech-skills-item"><span class="tech-skills-text">Vaardigheden voor energiebeheer</span>
+                    </li>
+                </ul>
+                <!-- </div>
+            Soft skills -->
+                <!-- <div class="soft-skills">
+                <h3 class="sidebar-title">Soft Skills</h3>
+                <ul class="soft-skills-list">
+                    <li class="soft-skills-item"><span class="soft-skills-text">Scrum</span></li>
+                    <li class="soft-skills-item"><span class="soft-skills-text">Agile</span></li>
+                    <li class="soft-skills-item"><span class="soft-skills-text">GTD</span></li>
+                    <li class="soft-skills-item"><span class="soft-skills-text">Teamwork</span></li>
+                </ul>
+            </div> -->
+        </aside>
+    </div>
+</body>
+
+</html>
